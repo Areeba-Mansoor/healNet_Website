@@ -1,0 +1,30 @@
+#join-btn {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#bookBtn{
+  cursor: pointer;
+}
+#doctr-img {
+  width: 500px;
+
+}
+#customer-img {
+  width: 270px;
+}
+
+#appointment {
+  /* width: 270px;
+  height: 90px; */
+}
+
+#image-container {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

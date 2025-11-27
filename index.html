@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealNet</title>
+    <!-- favb icon -->
+    <link rel="shortcut icon" href="./assets/Group 2.png" type="image/x-icon">
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font owesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==============Header=================== -->
+    <!-- Header -->
+    <header class="w-full body-font bg-[#F4BFF]">
+        <div class="w-full max-w-350  m-auto flex flex-wrap py-5 px-5 flex-col md:flex-row md:px-0 md:px-5">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="./assets/Group 2.png" alt="logo" width="35px">
+                <h1 class="ml-1 font-Inter text-3xl font-bold text-[#0069AB] text-shadow-sm/20 cursor-pointer">HealNet
+                </h1>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden mr-10 text-2xl font-bold absolute right-5 top-6">
+                ☰
+            </button>
+
+            <nav id="menu"
+                class="md:ml-auto md:mr-auto flex gap-5 flex-col mt-4 md:flex-row text-base justify-center hidden md:flex md:gap-2 cursor-pointer">
+                <a
+                    class="mr-5 text-xl text-blue-700 hover:text-gray-900 font-semibold sm:mb-3 md:mr-2 lg:text-xl sm:text-lg lg:mr-5">Home</a>
+                <a
+                    class="text-xl hover:text-cyan-500 font-semibold sm:mb-2  md:mr-2 lg:text-xl sm:text-lg lg:mr-5">Services</a>
+                <a class="mr-5 text-xl hover:text-cyan-500 font-semibold sm:mb-2 md:mr-2 lg:text-xl sm:text-lg lg:mr-5">Find
+                    Doctors</a>
+                <a class="mr-5 text-xl hover:text-cyan-500 font-semibold sm:mb-2 md:mr-2 lg:text-xl sm:text-xl lg:mr-5">About
+                    Us</a>
+                <a
+                    class="mr-5 text-xl hover:text-cyan-500 font-semibold sm:mb-2 md:mr-2 lg:text-xl sm:text-lg lg:mr-5">Blog</a>
+                <a class="mr-5 text-xl hover:text-cyan-500 font-semibold sm:mb-2 md:mr-2 lg:text-xl sm-text-lg lg:mr-5">Contact
+                    Us</a>
+            </nav>
+
+            <button id="join-btn"
+                class="w-25 text-white bg-linear-to-r from-cyan-300 to-blue-600 border-0 py-2 px-6 focus:outline-none rounded-md font-medium  shadow-lg shadow-gray-500/50 cursor-pointer transition duration-400 hover:-translate-y-2 text-base mt-4 md:mt-0 hidden md:block md:text-sm md:px-4 text-xl">
+                Join Us
+            </button>
+        </div>
+    </header>
+
+    <!-- ============== Hero  Section =================== -->
+    <section class="w-full body-font bg-[#F4BFF]">
+        <div class="w-full max-w-350 mx-auto flex py-10 md:flex-row flex-col items-center relative">
+            <div class="absolute top-80 left-5 z-1">
+                <img src="./assets/Vector 1 (3).png" alt="" width="90%">
+            </div>
+
+            <div
+                class="w-full max-w-160 py-10 px-8  xl:max-w-170 lg:max-w-150 flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left sm:bg-pink-00">
+                <h1
+                    class="text-3xl font-semibold ml-5 xl:text-6xl xl:leading-18 lg:text-6xl md:text-4xl md:leading-12 lg:leading-15 ml-[-5px]">
+                    Your <span class="text-blue-500 font-semibold">trusted </span> <span
+                        class="text-blue-400">partner</span>
+                    in digital health</h1>
+
+                <p class="mt-8 text-xl leading-8 font-semibold text-blue-500 mr-20">Empowering Your Health at Every
+                    Step.
+                    <span class="text-gray-500">Experience personalized medical
+                        care from the comfort of your home. Connect with
+                    </span>
+                    <span class="text-blue-500"> certified doctors, or</span>
+                    <span class="text-gray-500">manage prescriptions, and schedule appointments with ease. Ready to take
+                        control of your health? </span>
+                    <span class="text-blue-500"> Get
+                        Started </span>
+                    <span class="text-gray-500"> or Book an Appointment today.</span>
+                </p>
+                <div class="flex">
+                    <button id="bookBtn"
+                        class="w-64 md:mt-8 text-lg flex gap-2 mt-5 rounded-lg font-semibold text-white bg-linear-to-r from-cyan-300 to-blue-600  px-5 py-4 cursor-pointer transition duration-300 hover:from-blue-500 hover:to-blue-700 ">Book
+                        an appointment <i class="fa-solid fa-angle-right"
+                            style="color: #ffffff; margin-top: 6px;"></i></button>
+                </div>
+
+
+                <!-- Para and social icons -->
+                <p class="mt-10 text-lg text-gray-500 ">Trusted by millions across the globe:</p>
+                <div class="flex gap-6 mt-4 sm:mr-80 sm:mt-5">
+                    <img src="./assets/ri_amazon-fill.png" alt=""
+                        class="transition duration-500 hover:scale-125 cursor-pointer">
+                    <img src="./assets/ic_baseline-apple.png" alt=""
+                        class="transition duration-500 hover:scale-125 cursor-pointer">
+                    <img src="./assets/uim_google.png" alt=""
+                        class="transition duration-500 hover:scale-125 cursor-pointer">
+                    <img src="./assets/cib_notion.png" alt=""
+                        class="transition duration-500 hover:scale-125 cursor-pointer">
+                    <img src="./assets/mdi_spotify.png" alt=""
+                        class="transition duration-500 hover:scale-110 cursor-pointer">
+                    <img src="./assets/mdi_slack.png" alt=""
+                        class="transition duration-500 hover:scale-110 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Doctor Image -->
+            <div id="img-container" class="w-full py-3 flex jflex-col md:items-start h-auto md:mb-0">
+                <div class="w-full" id="image-container">
+                    <img class="object-cover object-center ml-10 mt-[-10px] xl:ml-20 lg:mr-15 sm:ml-10 md:ml-0"
+                        alt="hero" src="./assets/Group 1 (2).png" id="doctr-img">
+                </div>
+                <!-- Customer feedback images -->
+                <div
+                    class="absolute top-232 left-85 2xl:top-82 2xl:left-275 xl:top-82 xl:left-252 lg:top-90 lg:left-200 md:top-87 md:left-190 sm:top-230 sm:left-95 z-3">
+                    <img class="transition rounded-xl duration-400 hover:scale-110 hover:shadow-lg hover:shadow-cyan-100 cursor-pointer"
+                        src="./assets/Frame 6 (1).png" alt="" id="customer-img">
+                </div>
+                <div
+                    class="absolute top-260 left-[-40px] 2xl:top-100 2xl:left-170 xl:top-115 xl:left-150 lg:top-105 lg:left-120 md:top-100 md:left-100 sm:top-250 sm:left-0 z-3">
+                    <img class="transition rounded-xl duration-400 hover:scale-110 hover:shadow-lg hover:shadow-cyan-100 cursor-pointer"
+                        src="./assets/Frame 4 (2).png" alt="" width="300px" id="appointment">
+                </div>
+                <div
+                    class="absolute top-280 left-70 2xl:top-135 2xl:left-252 xl:top-138 xl:left-230 lg:top-150 lg:left-185 md:top-130 md:left-170 sm:top-285 sm:left-75 z-4">
+                    <img class="transition rounded-xl duration-400 hover:scale-110 hover:shadow-lg hover:shadow-cyan-100 cursor-pointer"
+                        src="./assets/Frame 3 (3).png" alt="" width="290px">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Book Appointment -->
+    <section class="w-full body-font bg-[#F4BFF]">
+        <div class="xl:max-w-6xl lg:max-w-4xl sm:max-w-[680px] sm:py-12  mx-auto border-1 border-cyan-500 rounded-3xl bg-white py-6 px-10 m-5 shadow-lg shadow-gray-400
+
+             hover:transition hover:duration-500 ease-in-out xl:hover:scale-105 cursor-pointer">
+
+            <div class=" mb-6">
+                <h1 class="text-blue-500 title-font sm:text-3xl text-2xl font-medium ">
+                    Easily book an appointment in 3 simple steps
+                </h1>
+            </div>
+
+
+            <div class="flex flex-col items-center md:flex-row gap-5 md:gap-6 items-center">
+
+
+                <div class="flex-1 w-full">
+                    <div class="flex gap-2 items-center mb-2">
+                        <img src="./assets/ic_round-email.png" alt="email icon" class="w-6 h-6">
+                        <h6 class="font-semibold text-gray-700">Email Address</h6>
+                    </div>
+                    <input type="email" placeholder="Enter Your Email Address"
+                        class="w-full p-3 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+
+
+                <div class="flex-1 w-full">
+                    <div class="flex gap-2 items-center mb-2">
+                        <img src="./assets/Vector.png" alt="contact icon" class="w-5 h-5">
+                        <h6 class="font-semibold text-gray-700">Contact Number</h6>
+                    </div>
+                    <input type="number" placeholder="Enter Your Contact Number"
+                        class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+
+                <div class="flex-1 w-full">
+                    <div class="flex gap-2 items-center mb-2">
+                        <img src="./assets/Vector (1).png" alt="calendar icon" class="w-5 h-5">
+                        <h6 class="font-semibold text-gray-700">Date of Appointment</h6>
+                    </div>
+                    <input type="date"
+                        class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+
+
+                <div class="flex-shrink w-full md:w-auto">
+                    <div
+                        class="flex justify-center items-center gap-2 py-2 px-4 w-full md:w-[150px] h-[50px] mt-7 bg-[#00a4F4] hover:to-blue-600 text-white font-semibold rounded-lg shadow-lg transition">
+                        <button "
+                        type=" submit">
+                            Book Now
+                        </button>
+                        <img src="./assets/tick.png" alt="" class="w-5 h-5">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--====================Top Services=================== -->
+    <section class="w-full body-font mb-5 bg-[#F4BFF]">
+        <div class=" max-w-3xl xl:max-w-6xl lg:max-w-5xl md:max-4xl mx-auto mt-20 border-0">
+            <div class="max-w-2xl xl:max-w-7xl mx-auto py-6 px-30 text-center">
+                <h1 class="text-xl xl:text-3xl xl:font-semibold">Top <span class=" bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 
+                     bg-clip-text text-transparent">services</span> we offer</h1>
+                <p class="text-gray-800 mx-10 mt-5 lg:mx-2">In today’s fast-paced world, your health deserves the utmost
+                    attention and convenience. That’s
+                    why HealNet offers a suite of integrated services designed to cater to your healthcare needs
+                    digitally:
+                </p>
+            </div>
+
+            <div class="max-w-7xl px-5 py-10 mx-auto mt-10 flex flex-wrap">
+                <div class="flex flex-wrap -m-4 relative">
+                    <!-- bg-image -->
+                    <img class="w-30 h-10 absolute top-0 left-[-30px]" src="./assets/Group (1).png" alt="">
+
+                    <!-- ------Top Service row 1--------- -->
+                    <div class="p-4 lg:w-1/2 md:w-full">
+                        <!-- -------Left ------- -->
+                        <div
+                            class="border-1 rounded-3xl border-2 border-cyan-200 shadow-lg shadow-gray-300 border-opacity-50 p-8 sm:flex-row flex-col z-100">
+                            <div class="mt-2 sm:mr-8 sm:mb-0 mb-4 items-center justify-center flex-shrink-0">
+                                <img src="./assets/Frame 5 (5).png" alt="">
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-[#207BB6] text-lg title-font font-medium mt-4 mb-1">Online Consulations
+                                </h2>
+                                <p class="leading-relaxed text-base text-gray-700">Consult with top doctors across
+                                    various specialties via video or chat communication. It’s totally secure, private,
+                                    and convenient. Choose the best time for an in-person visit with our easy-to-use
+                                    scheduling system, or proceed with our online consultation.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----Right  -->
+                    <div class="p-4 lg:w-1/2 md:w-full">
+                        <div
+                            class="border-1 rounded-3xl border-2 border-cyan-200 shadow-lg shadow-gray-300 border-opacity-50 py-11 px-8 sm:flex-row flex-col">
+                            <div class="mt-2 sm:mr-8 sm:mb-0 mb-4  items-center flex-shrink-0">
+                                <img src="./assets/Frame 5 (3).png" alt="">
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-[#207BB6] text-lg title-font font-medium mt-4 mb-1">Booking
+                                    Appointmentss</h2>
+                                <p class="leading-relaxed text-base text-gray-700">Choose the best time for an in-person
+                                    visit with our easy-to-use scheduling system, or proceed with our online
+                                    consultation features.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------Top Service row 2--------- -->
+            <div class="container px-5 py-10 mx-auto  relative">
+                <div class="flex flex-wrap -m-4">
+                    <!-- left -->
+                    <div class="p-4 xl:w-1/3 md:w-1/1">
+                        <div
+                            class="h-full border-2 p-5 border-cyan-200 border-opacity-60 rounded-3xl  shadow-lg shadow-gray-300 overflow-hidden">
+                            <img class="object-cover object-center ml-5" src="./assets/Frame 5 (2).png" alt="blog">
+                            <div class="p-6">
+
+                                <h2 class="text-[#207BB6] text-lg title-font font-medium mt-4 mb-1">Prescriptions</h2>
+                                <p class="leading-relaxed text-base text-gray-700">Receive and renew prescriptions
+                                    digitally after your consultation with our specialists .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- center -->
+                    <div class="  p-4 xl:w-1/3 md:w-1/1">
+                        <div
+                            class="h-full p-5 border-2 border-cyan-200 border-opacity-60 rounded-3xl shadow-lg shadow-gray-300 overflow-hidden ">
+                            <img class=" object-cover object-center ml-5" src="./assets/Frame 5.png" alt="blog">
+                            <div class="p-6">
+
+                                <h2 class="text-[#207BB6] text-lg title-font font-medium mt-4 mb-1">Medical Notes</h2>
+                                <p class="leading-relaxed text-base text-gray-700">Obtain necessary medical notes for
+                                    work or school with only a few clicks of hassle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right -->
+                    <div class="p-4 xl:w-1/3 md:w-1/1">
+                        <div
+                            class="h-full border-2 border-cyan-200 p-5 border-opacity-60 rounded-3xl shadow-lg shadow-gray-300 overflow-hidden">
+                            <img class=" object-cover object-center ml-5" src="./assets/Frame 5 (1).png" alt="blog">
+                            <div class="p-6">
+
+                                <h2 class="text-[#207BB6] text-lg title-font font-medium mt-4 mb-1">Medicine Refills
+                                </h2>
+                                <p class="leading-relaxed text-base text-gray-700">Skip the pharmacy queues and save
+                                    time energy by ordering medicine refills online.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- bg-image -->
+                <img class="w-30 h-10 absolute top-192  right-0 xl:top-68 xl:right-[-30px] md:top-190 sm:top-192 sm:right-0"
+                    src="./assets/Group (1).png" alt="">
+            </div>
+    </section>
+
+    <!-- ------Medicien Section -->
+    <section class="text-gray-600 body-font w-full bg-green-200">
+        <div class="container max-w-7xl px-5 py- mx-auto bg-pink-200">
+            <div class="flex flex-col justify-center text-center w-full mb-12">
+                <h1
+                    class="sm:text-3xl text-2xl font-semibold title-font bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-800  bg-clip-text text-transparent">
+                    Masters of Medicine :</h1>
+                <h1 class="sm:text-3xl text-2xl font-semibold title-font mb-4 ">Meet our team of specialists</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Our team of specialists is at the forefront of
+                    medical innovation. Each specialist brings a unique blend of expertise, empathy, and experience to
+                    ensure that your health is in the best hands:</p>
+            </div>
+
+            <div class="container w-full flex justify-center mx-auto bg-yellow-100">
+                <div class="w-full flex flex-col py-2 text-center bg-orange-400">
+                    <div class="w-full lg:w-[700px] h-100 lg:h-80 mb-10 p- px-0 mx-auto bg-[#35BDFF] rounded-3xl ">
+                        <div class="h-auto flex">
+                            <img alt="" class="mt-[-35px] h-89 w-80" src="./assets/Doctor-female.png">
+                            <div class="mt-10 text-left">
+                                <h1 class="text-2xl text-white">Dr. Sarah Johnson (Cardiologis)</h1>
+                                <p class="text-white mt-5">Heart health is Dr. Wong’s passion, and her approach to
+                                    cardiology integrates cutting-edge technology with compassionate care. She’s a
+                                    respected voice in the prevention of heart disease and a trusted partner to her
+                                    patients on their journey to wellness.</p>
+                                <div class="mt-10 relative ">
+                                    <button class="text-blue-400 rounded-lg bg-white py-2 px-10">Book Appoinment</button>
+                                    <img class="absolute top-4 left-45" src="./assets/phone.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full lg:w-[700px] h-100 lg:h-80 mb-10 p- px-0 mx-auto bg-[#35BDFF] rounded-3xl ">
+                          <div class="h-auto flex">
+                            <img alt="" class="mt-[-35px] h-89 w-80" src="./assets/Doctor-female.png">
+                            <div class="mt-10 text-left">
+                                <h1 class="text-2xl text-white">Dr. Mark Lee (Dermatologist )</h1>
+                                <p class="text-white mt-5">Dr. Lee is a visionary in dermatology, advancing treatments for skin health with a gentle, holistic approach. His dedication to clinical excellence and patient education has made him a leader in dermatological care. He’s known for his precision and commitment to patient-centered care.</p>
+                                <div class="mt-10 relative ">
+                                    <button class="text-blue-400 rounded-lg bg-white py-2 px-10">Book Appoinment</button>
+                                    <img class="absolute top-4 left-45" src="./assets/phone.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    </div>
+    </section>
+
+    <!-- ----------Contact Us----- -->
+    <section class="text-gray-600 body-font">
+        <div class="container max-w-7xl px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-900"> Reach our <span class=" bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 
+                     bg-clip-text text-transparent">Help Desk</span> for support</h1>
+                <p class=" w-100 lg:w-2/4 mx-auto leading-relaxed text-base">Questions? Need assistance? Our dedicated
+                    support team is here to help you every step of the way:.</p>
+            </div>
+            <div
+                class="flex lg:max-w-4xl sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+                <div class="relative flex-grow w-[80%] w-full">
+                    <img class="absolute top-4 left-4" src="./assets/email (1).png" alt="">
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter Your Name"
+                        class="w-full bg-transparent bg-opacity-50 rounded border-1 border-cyan-300 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-9 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative flex-grow w-[80%] w-full">
+                    <img class="absolute top-4 left-4" src="./assets/user.png" alt="">
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Address"
+                        class="w-full bg-gray-transparent bg-opacity-50 rounded border-1 border-cyan-300 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-9 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button
+                    class="w-64 w-full text-white border-0 py-2 px-8 focus:outline-none cursor-pointer  text-lg bg-[#00a4F4] hover:to-blue-600 text-white font-semibold rounded-lg shadow-lg shadow-gray-300 transition">Contact
+                    us</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------Footer------------- -->
+    <footer class="w-full px-20 text-gray-600 body-font bg-[#f2FAFF]">
+        <div
+            class=" max-w-8xl px-5 py-10 border-b-2 border-cyan-100 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-100 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img class="w-18" src="./assets/Group 2 (1).png" alt="">
+                </a>
+                <h1 class="text-3xl font-bold text-[#0069AB] text-shadow-sm/20 cursor-pointer">HealNet</h1>
+                <p class="mt-10 text-md text-gray-500">Experience personalized medical care from the comfort of your
+                    home.</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-cyan-400 tracking-widest text-md mb-5">Support</h2>
+                    <nav class="list-none mb-20">
+                        <li class="mb-3">
+                            <a class="text-gray-600 hover:text-gray-800 mb">Getting Started</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">FAQS</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Help Articles</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Report an issue</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Contact Help Desk</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-cyan-400 tracking-widest text-md mb-5">Services</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Booking appointments</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Online consultations</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Prescriptions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Medicine Refills</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Medical Notes</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-cyan-400 tracking-widest text-md mb-5">Legal</h2>
+                    <nav class="list-none mb-10">
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Terms & Conditions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Cookie Notice</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Cookie Notice</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-gray-600 hover:text-gray-800">Trust Center</a>
+                        </li>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-[#f2FAFF]">
+            <div class=" mx-auto py-3 items-center px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-md text-center sm:text-left">HealNet 2024 © All Rights Reserved
+                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                        target="_blank"></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center items-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <img class="w-10  transition duration-500 ease-in-out hover:-translate-y-4 cursor-pointer"
+                            src="./assets/ic_baseline-facebook.png" alt="">
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <img class="w-8 transition duration-500 ease-in-out hover:-translate-y-4 cursor-pointer"
+                            src="./assets/Vector (2).png" alt="">
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <img class="w-10  transition duration-500 ease-in-out hover:-translate-y-4 cursor-pointer"
+                            src="./assets/mdi_linkedin.png" alt="">
+                    </a>
+                    <a class="ml-3 text-gray-500 mt-2">
+                        <img class="w-10 transition duration-500 ease-in-out hover:-translate-y-4 cursor-pointer"
+                            src="./assets/Vector (3).png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
