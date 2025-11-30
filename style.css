@@ -11,12 +11,17 @@
 
 }
 #customer-img {
-  width: 270px;
+  width: 280px;
 }
-
-#appointment {
-  /* width: 270px;
-  height: 90px; */
+#icons{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+#icons:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 #image-container {
